@@ -257,7 +257,7 @@ static void analog_input_async_init(struct k_work *work) {
             .channel_id = channel_id,
             #ifdef CONFIG_ADC_CONFIGURABLE_INPUTS
                 #ifdef CONFIG_ADC_NRFX_SAADC
-                    .input_positive = SAADC_CH_PSELP_PSELP_AnalogInput0 + channel_id,
+                    .input_positive = SAADC_CH_PSELP_PSELP_AnalogInput6 + channel_id,
                 #else /* CONFIG_ADC_NRFX_SAADC */
                     .input_positive = channel_id,
                 #endif /* CONFIG_ADC_NRFX_SAADC */
